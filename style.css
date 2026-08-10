@@ -1,0 +1,104 @@
+
+/* HEY GUYS. PLEASE DON'T MAKE CHANGES TO OTHER MEMBERS' STYLING 
+
+DON'T FORGET TO PUSH YOUR CODE TO GITHUB AFTER MAKING CHANGES TO YOUR PAGE SO THAT RECENT 
+CHANGES ARE VISIBLE TO EVERYONE 
+*/
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #CBB99D;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/*Header*/
+header{
+  background-color: #749665;
+}
+
+#logo{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/*Navigation bar*/
+nav{
+  background-color:#749665 ;
+  text-align: center;
+}
+
+nav a{
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.button{
+  background-color: #CBB99D;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/*Main*/
+
+h1{
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+main p{
+  text-align: center;
+  margin-top:0;
+}
+
+
+#container{
+  display: grid;
+  grid-template-columns: repeat(2, 490px);
+  grid-template-rows: 150px 480px;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+#first-img{
+  width: 450px;
+  height: 600px;
+  object-fit: cover;
+  float: right;
+  margin-right: 0;
+  border-radius: 5px;
+}
+
+#second-img{
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+/*Footer*/
+footer{
+  background-color: #749665;
+  color: black;
+}
+
+footer p{
+  text-align: center;
+}
+
+footer{
+  padding: 1px;
+}
+
+
+
