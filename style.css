@@ -26,25 +26,64 @@ header{
 }
 
 /*Navigation bar*/
-nav{
+.nav-menu hr {
+  border: none;
+  height: 2px;
+  width: 90%;
+  background-color: #4b6640;
+  margin: 0 5%;
+}
+
+.nav-menu{
   background-color:#749665 ;
   text-align: center;
+  width: 100%;
+  margin: 0 0;
+  position: relative;
+  padding: 1px 0;
 }
 
-nav a{
-  display: inline-block;
-  padding-right: 15px;
-  padding-left: 15px;
-  color: black;
-  margin-bottom: 15px;
-}
-
-.button{
-  background-color: #CBB99D;
+.nav-link {
   text-decoration: none;
-  border-radius: 5px;
-  margin-right: 10px;
+  color: black;
+  font-weight: 50;
+  font-size: 16px;
+  padding: 0px 5%;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
 }
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(to right, #ff4500, #CBB99D);
+  transition: width 0.2s ease;
+}
+.nav-link:hover {
+  color: #ff4500;
+}
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #ff4500;
+}
+.nav-link.active::before {
+  width: 100%;
+}
+
+
+
+
+
+
 
 /*Main*/
 
