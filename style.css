@@ -81,11 +81,6 @@ header{
 
 
 
-
-
-
-
-
 /*Main*/
 
 h1{
@@ -109,7 +104,6 @@ main p{
     margin-left: 38%;
 
 }
-
 
 
 #container{
@@ -153,13 +147,15 @@ main p{
 
 #second-img{
   width: 550px;
-  height: 450px;
+  height: 465px;
   object-fit: cover;
   border-radius: 5px;
   margin-top: 5%;
   margin-left: 20px;
 }
 
+
+/* Second grid */
 #help{
   font-weight: 500;
   text-align: center;
@@ -172,12 +168,11 @@ main p{
   grid-template-columns: 1fr 1fr;
 }
 
-
 #information img{
   width: 580px;
   height: 600px;
   object-fit: cover;
-  margin-left: 50px;
+  margin-left: 60px;
   border-radius: 5px;
 }
 
@@ -227,10 +222,12 @@ main p{
   padding-bottom: 15px;
 }
 
+
 #left-grid h3{
   font-weight: 500;
   text-align: center;
   margin-bottom: 0;
+  font-style: italic;
 }
 
 #left-grid ul{
