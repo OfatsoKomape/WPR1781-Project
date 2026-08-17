@@ -1,91 +1,80 @@
-
-<!--HEY GUYS. PLEASE DON'T MAKE CHANGES TO A PAGE THAT DOES NOT BELONG TO YOU!!
-
-
-
-DON'T FORGET TO PUSH YOUR CODE TO GITHUB AFTER MAKING CHANGES TO YOUR PAGE SO THAT RECENT 
-CHANGES ARE VISIBLE TO EVERYONE 
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
-    <!--Font taken from fonts.google.com-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> 
 </head>
-
 <body>
-<header id="logo">ZARA DAYA</header>
-
+    <header id="logo">OLIVE & OAK</header>
 <nav class="nav-menu">
     <hr>
     <ul>
-        <a class="nav-link" href="index.html"> Home</a>
-        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a> 
         <a class="nav-link" href="portfolio.html">Portfolio</a>
         <a class="nav-link" href="contact.html">Contact</a>
     </ul>
 </nav>
-
-    
-<div id="imagebackground">
-    <div id="hero-media">
-        <img src="./image/raven lyn_.jpg" alt="Zara Daya portrait">
-    </div>
-
-    <h1 id="hero-title">
-        <span>ZARA</span>
-        <span>DAYA</span>
-        <span>Portfolio</span>
-    </h1>
-</div>
-<main>
- <section id="projects">
-    <h2>Projects</h2>
-
-    <div id="project-list">
-        <div class="project">
-            <img src="./image/Longwinterimg.jpg" alt="The Long Winter">
-            <p class="project-date">Apr 8, 2026</p>
-            <h3>The Long Winter</h3>
-            <p class="project-desc">Lead role in an Emmy-winning limited drama exploring family and memory across three decades.</p>
-        </div>
-
-        <div class="project">
-            <img src="./image/springcampaign.jpg" alt="Maison Verre campaign">
-            <p class="project-date">Mar 15, 2026</p>
-            <h3>Maison Verre &mdash; SS26</h3>
-            <p class="project-desc">Face of the spring/summer campaign, shot on location in Marrakech.</p>
-        </div>
-
-        <div class="project">
-            <img src="./image/Editorialshoot.jpg" alt="Vantage Magazine cover">
-            <p class="project-date">Feb 28, 2025</p>
-            <h3>Vantage Magazine</h3>
-            <p class="project-desc">Cover story and eight-page feature on breaking into film after modelling.</p>
-        </div>
-
-        <div class="project">
-            <img src="./image/Amberroad.jpg" alt="Amber Road film still">
-            <p class="project-date">Feb 6, 2019</p>
-            <h3>Amber Road</h3>
-            <p class="project-desc">Breakout leading role; official selection at three international film festivals.</p>
-        </div>
-
-        <div class="project">
-            <img src="./image/perfume.jpg"   alt="Nocturne fragrance campaign">
-            <p class="project-date">Jan 12, 2024</p>
-            <h3>Nocturne Fragrance</h3>
-            <p class="project-desc">Print and film campaign for a leading fragrance house's flagship scent.</p>
-        </div>
-    </div>
+<section id="featured-projects">
+    <h2>Featured Projects</h2>
+    <p class="featured-subtitle">A selection of our recent work across residential, corporate, and hospitality spaces.</p>
 </section>
-</main>
 
+<section id="portfolio-projects">
+    
+<div class="container">
+    <div class="projectimage">
+        <img src="./image/kitchen.jpg">
+    </div>
+    <div class="projecttext">
+         <h3>The Langford Loft</h3>
+        <p>A closed-off kitchen opened to a glazed skylight and a canopy of trailing plants, with walnut cabinetry and honed stone counters keeping the palette calm underneath.</p>
+        <h4>Johannesburg&bull;2025</h4>
+    </div>
+</div>
+
+<div class="container-reverse">
+    <div class="projectimage">
+        <img src="./image/Bathroom.jpg">
+       
+    </div>
+    <div class="projecttext">
+       <h3>The Sanctuary Bath</h3>
+                <p>A spa-like bathroom retreat with floor-to-ceiling marble, a freestanding soaking tub, and warm brass accents that soften the cool stone.</p>
+                <h4>Cape Town &bull; 2025</h4>
+    </div>
+</div>
+
+<div class="container">
+    <div class="projectimage">
+        <img src="./image/coperate.jpg">
+
+    </div>
+    <div class="projecttext">
+         <h3>The Green Quarter</h3>
+                <p>A biophilic corporate hub where living walls, natural light, and organic forms create a workspace that inspires creativity and well-being.</p>
+                <h4>Johannesburg &bull; 2025</h4>
+
+    </div>
+</div>
+<div class="container-reverse">
+        <div class="projectimage">
+            <img src="./image/hospitial.jpg">
+
+         </div>
+    <div class="projecttext">
+         <h3>The Terrace Lounge</h3>
+                <p>A boutique hotel lobby transformed with rich textures, statement lighting, and curated local artwork that captures the energy of the city.</p>
+                <h4>Cape Town &bull; 2025</h4>
+
+    </div>
+</div>
+
+
+
+</section>
+    
 </body>
 </html>
