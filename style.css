@@ -26,13 +26,6 @@ header{
 }
 
 /*Navigation bar*/
-.nav-menu hr {
-  border: none;
-  height: 2px;
-  width: 90%;
-  background-color: #4b6640;
-  margin: 0 5%;
-}
 
 .nav-menu{
   background-color:#749665 ;
