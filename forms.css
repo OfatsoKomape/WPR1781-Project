@@ -34,6 +34,7 @@ div input {
  margin-bottom: 20px;
  border: none;
  border-radius: 5px;
+ 
 }
 
 section#two div{
@@ -83,4 +84,40 @@ a{
     margin-left: 20px;
     position: relative;
     top: 20px;
+}
+@media (max-width: 1000px) {
+
+    article{
+    display:  flex;
+    color: white;
+    width: 80%;
+    margin:  50px auto;
+}}
+
+@media (max-width: 750px) {
+
+    article{
+    display:  flex;
+    color: white;
+    width: 95%;
+    margin:  50px auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#one{
+    background-color: #749665;
+    width: 350px;
+}
+
+section#two{
+    background-color: white;
+    color: black;
+    width: 350px;
+}
+
+.footy2
+{
+  position: relative;
+}
 }
