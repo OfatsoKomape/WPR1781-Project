@@ -633,4 +633,356 @@ footer{
     .projecttext h4 {
         font-size: 0.75rem;
     }
-/* END OF RESPONSIVE DESIGN OF PORTFOLIO PAGE CODE*/
+/* END OF RESPONSIVE DESIGN OF PORTFOLIO PAGE CODE*/ 
+/* HEY GUYS. PLEASE DON'T MAKE CHANGES TO OTHER MEMBERS' STYLING 
+
+DON'T FORGET TO PUSH YOUR CODE TO GITHUB AFTER MAKING CHANGES TO YOUR PAGE SO THAT RECENT 
+CHANGES ARE VISIBLE TO EVERYONE 
+*/
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #CBB99D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  background-color: #749665;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Navigation bar */
+.nav-menu {
+  background-color: #749665;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  position: sticky;
+  top: 0px;
+  padding: 1px 0;
+  z-index: 100;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0px 5%;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(to right, #ff4500, #CBB99D);
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ff4500;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #ff4500;
+}
+
+.nav-link.active::before {
+  width: 100%;
+}
+
+/* Hero Section */
+#about-hero {
+  padding: 50px 20px 30px;
+  text-align: center;
+  background-color: #749665;
+  margin-bottom: 40px;
+}
+
+#about-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.hero-subtitle {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* Story Section */
+#our-story-section {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.story-image-box img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #80622D;
+}
+
+.story-content h2 {
+  font-size: 1.8rem;
+  margin: 0 0 5px;
+  color: #000000;
+}
+
+.founding-date {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #80622D;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.story-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+/* Mission & Difference Section */
+#mission-difference-container {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.info-card {
+  background-color: #bca88a;
+  border: 1px solid #80622D;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.info-card h3 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.info-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+.Highlight-card {
+  background-color: #749665;
+}
+
+/* Core Values Section */
+#values-wrapper {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#values-wrapper h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.value-item {
+  background-color: #CBB99D;
+  border: 1px solid #80622D;
+  border-radius: 8px;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.value-icon {
+  width: 45px;
+  height: 45px;
+  background-color: #80622D;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.value-item h4 {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+  color: #000000;
+}
+
+.value-item p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0;
+}
+
+/* Process Section */
+#process-section {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#process-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.process-subtitle {
+  font-size: 0.95rem;
+  color: #474138;
+  margin-bottom: 35px;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.step-card {
+  background-color: #bca88a;
+  border-radius: 8px;
+  border: 1px solid #80622D;
+  padding: 25px 20px;
+  text-align: left;
+}
+
+.step-num {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ff4500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.step-card h3 {
+  font-size: 1.15rem;
+  margin: 8px 0 12px;
+  color: #000000;
+}
+
+.step-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+/* Call to Action Section */
+#about-cta {
+  background-color: #749665;
+  text-align: center;
+  padding: 45px 20px;
+  margin-top: 40px;
+}
+
+#about-cta h2 {
+  font-size: 1.7rem;
+  margin: 0 0 10px;
+  color: #000000;
+}
+
+#about-cta p {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cta-btn {
+  text-decoration: none;
+  padding: 10px 22px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #80622D;
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background-color: #5c451f;
+}
+
+.secondary-btn {
+  background-color: #474138;
+  color: #ffffff;
+}
+
+.secondary-btn:hover {
+  background-color: #2b2722;
+}
+
+/* Footer */
+footer {
+  background-color: #749665;
+  color: black;
+  margin-top: 0;
+  padding: 15px 0;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+}
