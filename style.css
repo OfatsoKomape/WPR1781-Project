@@ -92,10 +92,10 @@ main p{
 
 #slogan{
     font-style: italic;
-    margin-bottom: 20px;
-    display: inline-block;
-    width: 300px;
-    margin-left: 39%;
+    margin:0 auto 20px;
+    display: block;
+    width: fit-content;
+    max-width: 90%;
 }
 
 
@@ -159,6 +159,8 @@ main p{
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #information img{
@@ -166,6 +168,7 @@ main p{
   height: 600px;
   object-fit: cover;
   margin-left: 60px;
+  margin-right: 30px;
   border-radius: 5px;
 }
 
@@ -263,6 +266,9 @@ footer p{
 footer{
   padding: 1px;
 }
+
+
+
 /* start of portfolio page*/
 #featured-projects {
     padding: 60px 20px;
@@ -346,3 +352,160 @@ footer{
 
 
 
+/* RESPONSIVENESS DESIGN INDEX.HTML | RESPONSIVENESS DESIGN INDEX.HTML | RESPONSIVENESS DESIGN INDEX.HTML | RESPONSIVENESS DESIGN INDEX.HTML | RESPONSIVENESS DESIGN INDEX.HTML |*/
+/* Tablets */
+@media (max-width: 900px) {
+  #container, #information {
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#first-img, #second-img, #information img, #right-grid, #locations{
+  width: 100%;
+  margin-left: 0;
+}
+
+#first-img{
+  height: 500px
+}
+
+#second-img{
+  height: 400px;
+  margin-top: 20px;
+}
+
+#right-grid img{
+  width: 100%;
+  height: 350px;
+  margin-left: 0;
+}
+
+#information #text{
+  width: 90%;
+  margin: 20px auto;
+}
+
+#information #specialisation {
+  margin-left: 0;
+  text-align: center;
+}
+
+#information ul{
+  margin-left: 0;
+  text-align: center;
+}
+
+#more-portfolio{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+#contact-us{
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#locations{
+  margin-top: 20px;
+}
+}
+
+
+/* Phones */
+
+@media(max-width:600px){
+  #logo{text-align: center;
+  font-size: 24px;
+  padding: 10px;}
+
+  .nav-menu{
+    position:static;
+  }
+
+  .nav-link{
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0;
+  }
+
+  #slogan{
+    width:auto;
+    margin: 0 auto 20px;
+    display: block;
+    padding: 0 20px;
+  }
+
+  #container, #information {
+    width: 90%;
+    display: block;
+    margin: 30px auto;
+  }
+
+  #intro{
+    padding: 20px;
+  }
+
+  #more-about{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  #first-image, #second-img, #information img{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  #right-grid{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #right-grid img{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #information #text{
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 10px;
+  }
+
+  #information #specialisation{
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  #information ul{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+  }
+ 
+  #locations {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  #left-grid h3{
+    font-size: 18px;
+
+  #help{
+    font-size: 22px;
+    margin-top: 40px;
+  }
+  
+  footer{
+    margin-top: 40px;
+  }
+}
+}
+/* END OF RESPONSIVENESS DESIGN INDEX.HTML | END OF RESPONSIVENESS DESIGN INDEX.HTML | END OF RESPONSIVENESS DESIGN INDEX.HTML | END OF RESPONSIVENESS DESIGN INDEX.HTML | */
