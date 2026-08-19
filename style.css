@@ -56,23 +56,27 @@ header{
   left: 0;
   width: 0;
   height: 4px;
-  background: linear-gradient(to right, #ff4500, #CBB99D);
+  background: linear-gradient(to right, #DCAE96, #f8e0e7);
   transition: width 0.2s ease;
 }
 .nav-link:hover {
-  color: #ff4500;
+  color: #DCAE96;
 }
 .nav-link:hover::before {
   width: 100%;
 }
 
 .nav-link.active {
-  color: #ff4500;
+  color: #DCAE96;
 }
 .nav-link.active::before {
   width: 100%;
 }
 
+.nav-menu hr{
+  border: none;
+  border-top: 1px solid black;
+}
 
 
 /*Main*/
@@ -658,55 +662,6 @@ header {
     color: #000000;
    }
 
-.nav-menu {
-    background-color: #749665;
-     text-align: center;
-  width: 100%;
-     margin: 0;
-  position: sticky;
-      top: 0px;
-     padding: 1px 0;
-    z-index: 100;
-  }
-
-.nav-link {
-     text-decoration: none;
-     color: black;
-      font-weight: 500;
-    font-size: 16px;
-     padding: 0px 5%;
-     margin: 0px 20px;
-    display: inline-block;
-      position: relative;
-    transition: color 0.3s ease;
-   }
-
-.nav-link::before {
-  content: "";
-   position: absolute;
-    bottom: 0;
-   left: 0;
-  width: 0;
-  height: 4px;
-    background: linear-gradient(to right, #ff4500, #CBB99D);
-  transition: width 0.2s ease;
-    }
-
-.nav-link:hover {
-  color: #ff4500;
-   }
-
-.nav-link:hover::before {
-  width: 100%;
-  }
-
-.nav-link.active {
-  color: #ff4500;
-   }
-
-.nav-link.active::before {
-  width: 100%;
-    }
 
 
 #about-hero {
